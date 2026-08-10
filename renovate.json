@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "platformAutomerge": true,
+  "packageRules": [
+    {
+      "matchManagers": ["dockerfile", "github-actions"],
+      "automerge": true,
+      "automergeType": "branch",
+      "prCreation": "immediate"
+    }
+  ]
+}
